@@ -4,7 +4,7 @@ First off -- we start with familiarizing with markdown language.
 
 Using VS Code as my code editor, I used the `Markdown Preview Enhanced` extension to start off and preview my document.
 
-# Testing out lists
+### Testing out lists
 
 Testing out the list functionality as follows:
 * First item
@@ -16,7 +16,7 @@ Numbered lists can be displayed as follows:
 2. Second Numbered item
 3. Third Numbered item
 
-#Testing out different emphasise    
+### Testing out different emphasise    
 
 *This text* is italic.<br>
 **This text** is bold.<br>
@@ -29,7 +29,7 @@ Lastly, we have task lists:
 * [ ] Second Task
 * [x] Third Task (which is checked)
 
-# Checking out Code Snippets
+### Checking out Code Snippets
 
 So we can have `code snippets`.
 
@@ -47,7 +47,7 @@ Console.log("Hello world");
 sudo apt update
 ```
 
-# Images and Hyperlinks
+### Images and Hyperlinks
 
 Code snippets in markdown can recgonize the language when specified, and it also shows the synax:
 ![Code Snippet Image](/images/Code_PD4nxVvLZn.png)
@@ -59,7 +59,7 @@ We can also add hyperlinks as follows:
 
 [^1]: This is the footnote to specify the Pet Coach Website Details
 
-# Line Breaks and Tables
+### Line Breaks and Tables
 
 First lorem ipsum paragraph here, followed by some line breaks for orgnization purposes.
 
@@ -72,7 +72,7 @@ Next lorem ipsum paragraph. Refer to the table below:
 |----------|----------|
 | Content 1| Content 2|
 
-# Quotes
+### Quotes
 
 Sometimes, we will need to reference other code blocks or comments from other articles etc.  
 We can use code blocks to indicate that these snippets are references.
@@ -82,7 +82,7 @@ We can use code blocks to indicate that these snippets are references.
 > Let's try multiple lines of quote  
 > Line two in the same quote block
 
-# Next Steps
+### Next Steps
 
 The next steps would comprise of trying to host this exact site in our Github repository. We can simply use the base template -- Minima.
 
