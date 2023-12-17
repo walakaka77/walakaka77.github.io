@@ -5,7 +5,7 @@ This section explain how to set a separate site within Github pages.
 By default, github pages hosts your jekyll site at `https://your-username/github.io`.
 
 To do so, you have to name your repository as `your-username/github.io`. See screenshot below for reference:  
-![Default Github Pages Repo](/images/Code_PD4nxVvLZn.png)
+![Default Github Pages Repo](/images/TblxHaErU3.png)
 
 ### Separate Folder 
 
