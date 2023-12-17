@@ -1,10 +1,10 @@
-#Familiarization Document
+# Familiarization Document
 
 First off -- we start with familiarizing with markdown language.
 
 Using VS Code as my code editor, I used the `Markdown Preview Enhanced` extension to start off and preview my document.
 
-#Testing out lists
+# Testing out lists
 
 Testing out the list functionality as follows:
 * First item
@@ -18,8 +18,8 @@ Numbered lists can be displayed as follows:
 
 #Testing out different emphasise    
 
-*This text* is italic.
-**This text** is bold.
+*This text* is italic.<br>
+**This text** is bold.<br>
 ~~This text~~ is striked through.
 
 You can also have text that are ***bold and italics***.
@@ -47,7 +47,7 @@ Console.log("Hello world");
 sudo apt update
 ```
 
-#Images and Hyperlinks
+# Images and Hyperlinks
 
 Code snippets in markdown can recgonize the language when specified, and it also shows the synax:
 ![Code Snippet Image](../images/Code_PD4nxVvLZn.png)
@@ -63,13 +63,24 @@ We can also add hyperlinks as follows:
 
 First lorem ipsum paragraph here, followed by some line breaks for orgnization purposes.
 
-___
+<Br>
 
+___
 Next lorem ipsum paragraph. Refer to the table below:
 
 | Header 1 | Header 2 |
 |----------|----------|
 | Content 1| Content 2|
+
+# Quotes
+
+Sometimes, we will need to reference other code blocks or comments from other articles etc.  
+We can use code blocks to indicate that these snippets are references.
+
+>This is a block of quote
+
+> Let's try multiple lines of quote  
+> Line two in the same quote block
 
 # Next Steps
 
