@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Separate site on Github pages"
+date:   2023-12-17 17:27:52 +0800
+categories: Familiarization w SSG
+---
+
 # Introduction
 
 This section explain how to set a separate site within Github pages.

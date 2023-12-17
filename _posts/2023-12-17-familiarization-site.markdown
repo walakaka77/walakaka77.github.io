@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Introduction to markdown"
+date:   2023-12-17 17:27:52 +0800
+categories: Familiarization w SSG
+---
+
 # Familiarization Document
 
 First off -- we start with familiarizing with markdown language.

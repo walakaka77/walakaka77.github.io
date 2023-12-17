@@ -1,0 +1,14 @@
+<!-- _includes/navigation.html -->
+
+<nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      
+      {% for category in site.categories %}
+        <li>
+          <a href="/categories/{{ category | first | slugify }}/">{{ category | first }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  
