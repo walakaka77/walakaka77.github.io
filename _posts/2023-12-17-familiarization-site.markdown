@@ -50,7 +50,7 @@ sudo apt update
 #Images and Hyperlinks
 
 Code snippets in markdown can recgonize the language when specified, and it also shows the synax:
-![Code Snippet Image](images\Code_PD4nxVvLZn.png)
+![Code Snippet Image](../images/Code_PD4nxVvLZn.png)
 
 Noticed -- I just added an image above too.
 
