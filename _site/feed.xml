@@ -1,16 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-31T19:26:49+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Familiarization Site</title><subtitle>This is an introductory site that aims to document my learnings on how to host static sites using Jekyll</subtitle><entry><title type="html">Remotely modify the existing Repo</title><link href="http://localhost:4000/original/jekyll/post/2023/12/31/new-year-post.html" rel="alternate" type="text/html" title="Remotely modify the existing Repo" /><published>2023-12-31T17:27:52+08:00</published><updated>2023-12-31T17:27:52+08:00</updated><id>http://localhost:4000/original/jekyll/post/2023/12/31/new-year-post</id><content type="html" xml:base="http://localhost:4000/original/jekyll/post/2023/12/31/new-year-post.html"><![CDATA[<h1 id="new-year-post">New Year Post</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-31T19:33:20+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Familiarization Site</title><subtitle>This is an introductory site that aims to document my learnings on how to host static sites using Jekyll</subtitle><entry><title type="html">Remotely modify the existing Repo</title><link href="http://localhost:4000/original/jekyll/post/2023/12/31/new-year-post.html" rel="alternate" type="text/html" title="Remotely modify the existing Repo" /><published>2023-12-31T17:27:52+08:00</published><updated>2023-12-31T17:27:52+08:00</updated><id>http://localhost:4000/original/jekyll/post/2023/12/31/new-year-post</id><content type="html" xml:base="http://localhost:4000/original/jekyll/post/2023/12/31/new-year-post.html"><![CDATA[<h1 id="new-year-post">New Year Post</h1>
 
 <p>This post was created on Alexis’s mac laptop. The steps that was done was as follows:</p>
 <ol>
   <li>Installed the following tools:
- a. Homebrew
- b. VS Code
- c. Git
- d. Ruby, Gem, Bundler (These are dependencies for Jekyll)
- e. Jeykll</li>
+    <ul>
+      <li>Homebrew</li>
+      <li>VS Code</li>
+      <li>Git</li>
+      <li>Ruby, Gem, Bundler (These are dependencies for Jekyll)</li>
+      <li>Jeykll</li>
+    </ul>
+  </li>
   <li>Run Jekyll on Local
- a. Create a test site
- b. Serve the test site on Local</li>
+    <ol>
+      <li>Create a test site</li>
+      <li>Serve the test site on Local</li>
+    </ol>
+  </li>
   <li>Download the existing project from the repo</li>
   <li>Update the project (this post)</li>
   <li>Test on Local</li>
