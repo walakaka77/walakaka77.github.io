@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-31T19:26:49+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Familiarization Site</title><subtitle>This is an introductory site that aims to document my learnings on how to host static sites using Jekyll</subtitle><entry><title type="html">Remotely modify the existing Repo</title><link href="http://localhost:4000/original/jekyll/post/2023/12/31/new-year-post.html" rel="alternate" type="text/html" title="Remotely modify the existing Repo" /><published>2023-12-31T17:27:52+08:00</published><updated>2023-12-31T17:27:52+08:00</updated><id>http://localhost:4000/original/jekyll/post/2023/12/31/new-year-post</id><content type="html" xml:base="http://localhost:4000/original/jekyll/post/2023/12/31/new-year-post.html"><![CDATA[<h1 id="new-year-post">New Year Post</h1>
+
+<p>This post was created on Alexis’s mac laptop. The steps that was done was as follows:</p>
+<ol>
+  <li>Installed the following tools:
+ a. Homebrew
+ b. VS Code
+ c. Git
+ d. Ruby, Gem, Bundler (These are dependencies for Jekyll)
+ e. Jeykll</li>
+  <li>Run Jekyll on Local
+ a. Create a test site
+ b. Serve the test site on Local</li>
+  <li>Download the existing project from the repo</li>
+  <li>Update the project (this post)</li>
+  <li>Test on Local</li>
+  <li>Push the latest version to the repo</li>
+</ol>]]></content><author><name></name></author><category term="original" /><category term="Jekyll" /><category term="post" /><summary type="html"><![CDATA[New Year Post]]></summary></entry><entry><title type="html">Revision and creating a Jekyll Site w Different Theme</title><link href="http://localhost:4000/original/jekyll/post/2023/12/30/revision-and-import-theme-Jekyll.html" rel="alternate" type="text/html" title="Revision and creating a Jekyll Site w Different Theme" /><published>2023-12-30T17:27:52+08:00</published><updated>2023-12-30T17:27:52+08:00</updated><id>http://localhost:4000/original/jekyll/post/2023/12/30/revision-and-import-theme-Jekyll</id><content type="html" xml:base="http://localhost:4000/original/jekyll/post/2023/12/30/revision-and-import-theme-Jekyll.html"><![CDATA[<h1 id="objective-of-today">Objective of Today</h1>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />How to start Jekyll</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />How to create separate site in Jekyll</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Import a theme in Jeyll</li>
+</ul>
+
+<h2 id="revision-of-how-to-start-jekyll">Revision of how to start Jekyll</h2>
+
+<p>Assuming that you already have all the dependencies installed, and the Jekyll files such as <code class="language-plaintext highlighter-rouge">posts</code> etc. already created.</p>
+
+<p>You should cd into your Jekyll site directory:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>path/to/your/jekyll/project
+</code></pre></div></div>
+
+<p>Once you are in your Jekyll project directory. Run the following command to build the Jekyll site and serve it locally on your machine:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+
+<p>This will server your Jekyll site locally at port 4000.</p>
+
+<p>So you will be able to access your site at <code class="language-plaintext highlighter-rouge">localhost:4000</code>. See the screenshot below for reference:
+<img src="/images/localhost4000.png" alt="Access Localhost 4000" /></p>
+
+<h2 id="revision-of-how-to-ceate-separate-site-in-jekyll">Revision of how to ceate separate Site in Jekyll</h2>
+
+<h2 id="import-a-theme-to-jekyll">Import a theme to Jekyll</h2>]]></content><author><name></name></author><category term="original" /><category term="Jekyll" /><category term="post" /><summary type="html"><![CDATA[Objective of Today]]></summary></entry><entry><title type="html">Separate site on Github pages</title><link href="http://localhost:4000/familiarization/w/ssg/2023/12/17/creating-separate-repo-for-differing-sites.html" rel="alternate" type="text/html" title="Separate site on Github pages" /><published>2023-12-17T17:27:52+08:00</published><updated>2023-12-17T17:27:52+08:00</updated><id>http://localhost:4000/familiarization/w/ssg/2023/12/17/creating-separate-repo-for-differing-sites</id><content type="html" xml:base="http://localhost:4000/familiarization/w/ssg/2023/12/17/creating-separate-repo-for-differing-sites.html"><![CDATA[<h1 id="introduction">Introduction</h1>
+
+<p>This section explain how to set a separate site within Github pages.</p>
+
+<p>By default, github pages hosts your jekyll site at <code class="language-plaintext highlighter-rouge">https://your-username/github.io</code>.</p>
+
+<p>To do so, you have to name your repository as <code class="language-plaintext highlighter-rouge">your-username/github.io</code>. See screenshot below for reference:<br />
+<img src="/images/TblxHaErU3.png" alt="Default Github Pages Repo" /></p>
+
+<h3 id="separate-folder">Separate Folder</h3>
+
+<p>However, if you want to host your site at a specified base URL, you must:</p>
+<ol>
+  <li>Name the repository accordingly</li>
+  <li>Explicitly indicate the base url in the jekyll config file</li>
+</ol>
+
+<p>For example, suppose you want your page to be hosted at <code class="language-plaintext highlighter-rouge">your-username/github.io/test-project</code>. You will have to name your repository as <code class="language-plaintext highlighter-rouge">test-project</code>. See screenshot below for reference:<br />
+<img src="/images/Xb7MgOrBbL.png" alt="Default Github Pages Repo" /></p>
+
+<p>With this configuration, you must also specify the configuration in your <code class="language-plaintext highlighter-rouge">_config.yml</code> for the base URL:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Your awesome title</span>
+<span class="na">email</span><span class="pi">:</span> <span class="s">your-email@example.com</span>
+<span class="na">description</span><span class="pi">:</span> <span class="pi">&gt;-</span> <span class="c1"># this means to ignore newlines until "baseurl:"</span>
+  <span class="s">This is a site to test creation of a separate repo in github pages</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/test-project"</span> <span class="c1"># the subpath of your site, e.g. /blog</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the base hostname &amp; protocol for your site, e.g. http://example.com</span>
+<span class="na">twitter_username</span><span class="pi">:</span> <span class="s">jekyllrb</span>
+<span class="na">github_username</span><span class="pi">:</span>  <span class="s">jekyll</span>
+</code></pre></div></div>
+
+<p>With the above configuration, you would be able to access the site at the following link:  <a href="https://walakaka77.github.io/test-project/" title="Test Project Site!">Test Project Site</a></p>
+
+<p>Notice that the URL of all the links have the base URL that was specified in the config:<br />
+<img src="/images/9S4SPXzyVR.png" alt="Default Github Pages Repo" /></p>]]></content><author><name></name></author><category term="Familiarization" /><category term="w" /><category term="SSG" /><summary type="html"><![CDATA[Introduction]]></summary></entry><entry><title type="html">Introduction to markdown</title><link href="http://localhost:4000/familiarization/w/ssg/2023/12/17/familiarization-site.html" rel="alternate" type="text/html" title="Introduction to markdown" /><published>2023-12-17T17:27:52+08:00</published><updated>2023-12-17T17:27:52+08:00</updated><id>http://localhost:4000/familiarization/w/ssg/2023/12/17/familiarization-site</id><content type="html" xml:base="http://localhost:4000/familiarization/w/ssg/2023/12/17/familiarization-site.html"><![CDATA[<h1 id="familiarization-document">Familiarization Document</h1>
+
+<p>First off – we start with familiarizing with markdown language.</p>
+
+<p>Using VS Code as my code editor, I used the <code class="language-plaintext highlighter-rouge">Markdown Preview Enhanced</code> extension to start off and preview my document.</p>
+
+<h3 id="testing-out-lists">Testing out lists</h3>
+
+<p>Testing out the list functionality as follows:</p>
+<ul>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ul>
+
+<p>Numbered lists can be displayed as follows:</p>
+<ol>
+  <li>First Numbered item</li>
+  <li>Second Numbered item</li>
+  <li>Third Numbered item</li>
+</ol>
+
+<h3 id="testing-out-different-emphasise">Testing out different emphasise</h3>
+
+<p><em>This text</em> is italic.<br />
+<strong>This text</strong> is bold.<br />
+<del>This text</del> is striked through.</p>
+
+<p>You can also have text that are <strong><em>bold and italics</em></strong>.</p>
+
+<p>Lastly, we have task lists:</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />First Task</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Second Task</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Third Task (which is checked)</li>
+</ul>
+
+<h3 id="checking-out-code-snippets">Checking out Code Snippets</h3>
+
+<p>So we can have <code class="language-plaintext highlighter-rouge">code snippets</code>.</p>
+
+<p>We can also have blocks of code:</p>
+
+<pre><code class="language-C#">Console.Writeline("Hello Word");
+</code></pre>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Hello world</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+</code></pre></div></div>
+
+<h3 id="images-and-hyperlinks">Images and Hyperlinks</h3>
+
+<p>Code snippets in markdown can recgonize the language when specified, and it also shows the synax:
+<img src="/images/Code_PD4nxVvLZn.png" alt="Code Snippet Image" /></p>
+
+<p>Noticed – I just added an image above too.</p>
+
+<p>We can also add hyperlinks as follows:
+<a href="https://petcoach.sg/" title="Pet Coach Main Website">Pet Coach Website!</a><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<h3 id="line-breaks-and-tables">Line Breaks and Tables</h3>
+
+<p>First lorem ipsum paragraph here, followed by some line breaks for orgnization purposes.</p>
+
+<p><br /></p>
+
+<hr />
+<p>Next lorem ipsum paragraph. Refer to the table below:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content 1</td>
+      <td>Content 2</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="quotes">Quotes</h3>
+
+<p>Sometimes, we will need to reference other code blocks or comments from other articles etc.<br />
+We can use code blocks to indicate that these snippets are references.</p>
+
+<blockquote>
+  <p>This is a block of quote</p>
+</blockquote>
+
+<blockquote>
+  <p>Let’s try multiple lines of quote<br />
+Line two in the same quote block</p>
+</blockquote>
+
+<h3 id="next-steps">Next Steps</h3>
+
+<p>The next steps would comprise of trying to host this exact site in our Github repository. We can simply use the base template – Minima.</p>
+
+<p>We will check with <code class="language-plaintext highlighter-rouge">ChatGTP</code>, on how we can proceed to host this on Github pages.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>This is the footnote to specify the Pet Coach Website Details <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="Familiarization" /><category term="w" /><category term="SSG" /><summary type="html"><![CDATA[Familiarization Document]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/original/jekyll/post/2023/12/17/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2023-12-17T17:27:52+08:00</published><updated>2023-12-17T17:27:52+08:00</updated><id>http://localhost:4000/original/jekyll/post/2023/12/17/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/original/jekyll/post/2023/12/17/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="original" /><category term="Jekyll" /><category term="post" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
